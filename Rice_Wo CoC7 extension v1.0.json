@@ -432,6 +432,234 @@
                                 "attributes|fighting:weapons:small-stick"
                             ],
                             "tags": []
+                        },
+                        "large-knife": {
+                            "key": "large-knife",
+                            "name": "大型刀具",
+                            "description": "大砍刀等",
+                            "categories": {},
+                            "attributes": {
+                                "large-knife": {
+                                    "name": "大型刀具",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "大型刀具"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:large-knife"
+                            ],
+                            "tags": []
+                        },
+                        "medium-knife": {
+                            "key": "medium-knife",
+                            "name": "中型刀具",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "medium-knife": {
+                                    "name": "中型刀具",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "中型刀具"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D4+2"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:medium-knife"
+                            ],
+                            "tags": []
+                        },
+                        "small-knife": {
+                            "key": "small-knife",
+                            "name": "小型刀具",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "small-knife": {
+                                    "name": "小型刀具",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "小型刀具"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D4"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:small-knife"
+                            ],
+                            "tags": []
+                        },
+                        "nunchaku": {
+                            "key": "nunchaku",
+                            "name": "雙截棍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "nunchaku": {
+                                    "name": "雙截棍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "雙截棍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:flail:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:nunchaku"
+                            ],
+                            "tags": []
                         }
                     }
                 }
