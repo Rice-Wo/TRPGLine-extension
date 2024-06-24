@@ -31,5 +31,11 @@
                         "16Gshotgun",
                         "12Gshotgun",
                         "10Gshotgun"
+                    ],
+    "AR_ids": [
+                        "762AR",
+                        "545AR",
+                        "556AR",
+                        "50AR"
                     ]
 }

@@ -2032,7 +2032,10 @@
                 "tags": [],
                 "value": {
                     "ids": [
-                        "762AR"
+                        "762AR",
+                        "545AR",
+                        "556AR",
+                        "50AR"
                     ],
                     "entities": {
                         "762AR": {
@@ -2041,7 +2044,7 @@
                             "description": "- AK 47\n- AKM",
                             "categories": {},
                             "attributes": {
-                                "j9Zk8VMsOhUF": {
+                                "762AR": {
                                     "name": "7.62口徑突擊步槍",
                                     "hasCustomName": false,
                                     "removable": false,
@@ -2087,11 +2090,178 @@
                                 }
                             },
                             "order": [
-                                "attributes|fighting:weapons:j9Zk8VMsOhUF"
+                                "attributes|fighting:weapons:762AR"
+                            ],
+                            "tags": []
+                        },
+                        "545AR": {
+                            "key": "545AR",
+                            "name": "5.45mm口徑突擊步槍",
+                            "description": "- AK 74",
+                            "categories": {},
+                            "attributes": {
+                                "545AR": {
+                                    "name": "5.45口徑突擊步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5.45口徑突擊步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5.45mm口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:545AR"
+                            ],
+                            "tags": []
+                        },
+                        "556AR": {
+                            "key": "556AR",
+                            "name": "5.56mm口徑突擊步槍",
+                            "description": "- M4\n- M16A2\n- AUG",
+                            "categories": {},
+                            "attributes": {
+                                "556AR": {
+                                    "name": "5.56口徑突擊步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5.56口徑突擊步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5.56mm口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:556AR"
+                            ],
+                            "tags": []
+                        },
+                        "50AR": {
+                            "key": "50AR",
+                            "name": ".50口徑步槍",
+                            "description": "《突擊步槍》\n我是真不知道為什麼會放這裡，可能是因為現代武器吧。",
+                            "categories": {},
+                            "attributes": {
+                                "50AR": {
+                                    "name": ".50口徑步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".50口徑突擊步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D10+1D8+6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".50BMG口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:50AR"
                             ],
                             "tags": []
                         }
-                    }
                 }
             },
             "SMG": {
