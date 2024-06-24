@@ -666,6 +666,402 @@
                                 "attributes|fighting:weapons:nunchaku"
                             ],
                             "tags": []
+                        },
+                        "axe": {
+                            "key": "axe",
+                            "name": "斧頭/鐮刀",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "axe": {
+                                    "name": "斧頭/鐮刀",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "斧頭/鐮刀"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:axe:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D6+1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:axe"
+                            ],
+                            "tags": []
+                        },
+                        "great-sword": {
+                            "key": "great-sword",
+                            "name": "大劍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "great-sword": {
+                                    "name": "大劍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "大劍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:sword:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:great-sword"
+                            ],
+                            "tags": []
+                        },
+                        "sword": {
+                            "key": "sword",
+                            "name": "單手劍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "sword": {
+                                    "name": "單手劍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "單手劍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:sword:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D6+1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:sword"
+                            ],
+                            "tags": []
+                        },
+                        "spear": {
+                            "key": "spear",
+                            "name": "矛",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "spear": {
+                                    "name": "矛",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "矛"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:spear:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8+1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:spear"
+                            ],
+                            "tags": []
+                        },
+                        "bow": {
+                            "key": "bow",
+                            "name": "弓箭",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "bow": {
+                                    "name": "弓箭",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "弓箭"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:bow:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "箭矢"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:bow"
+                            ],
+                            "tags": []
+                        },
+                        "crossbow": {
+                            "key": "crossbow",
+                            "name": "弓箭",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "crossbow": {
+                                    "name": "弓箭",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "弓箭"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:bow:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8+2"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "箭矢"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:crossbow"
+                            ],
+                            "tags": []
+                        },
+                        "kunai": {
+                            "key": "kunai",
+                            "name": "弓箭",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "kunai": {
+                                    "name": "弓箭",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "弓箭"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{movementSkills:throw:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D6+1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "箭矢"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:kunai"
+                            ],
+                            "tags": []
                         }
                     }
                 }

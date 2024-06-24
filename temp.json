@@ -9,6 +9,13 @@
                         "large-knife",
                         "medium-knife",
                         "small-knife",
-                        "nunchaku"
+                        "nunchaku",
+                        "axe",
+                        "great-sword",
+                        "sword",
+                        "spear",
+                        "bow",
+                        "crossbow",
+                        "kunai"
                     ]
 }
