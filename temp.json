@@ -1,5 +1,5 @@
 {
-   "ids": [
+   "close_range_ids": [
                         "hand",
                         "Brass-knuckles",
                         "burning-torch",
@@ -17,5 +17,17 @@
                         "bow",
                         "crossbow",
                         "kunai"
+            ],
+    "rifle_ids": [
+                        "58rifle",
+                        "22rifle",
+                        "30rifle",
+                        "45rifle",
+                        "762rifle",
+                        "444rifle"                       
+                    ],
+    "shotgun_ids": [
+                        "20Gshotgun",
+                        "16Gshotgun"
                     ]
 }

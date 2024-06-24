@@ -94,7 +94,18 @@
                         "burning-torch",
                         "Wrapped-iron-rod",
                         "large-stick",
-                        "small-stick"
+                        "small-stick",
+                        "large-knife",
+                        "medium-knife",
+                        "small-knife",
+                        "nunchaku",
+                        "axe",
+                        "great-sword",
+                        "sword",
+                        "spear",
+                        "bow",
+                        "crossbow",
+                        "kunai"
                     ],
                     "entities": {
                         "hand": {
@@ -1071,7 +1082,12 @@
                 "tags": [],
                 "value": {
                     "ids": [
-                        "58rifle"
+                        "58rifle",
+                        "22rifle",
+                        "30rifle",
+                        "45rifle",
+                        "762rifle",
+                        "444rifle"
                     ],
                     "entities": {
                         "58rifle": {
@@ -1127,6 +1143,286 @@
                             },
                             "order": [
                                 "attributes|fighting:weapons:58rifle"
+                            ],
+                            "tags": []
+                        },
+                        "22rifle": {
+                            "key": "22rifle",
+                            "name": ".22口徑步槍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "22rifle": {
+                                    "name": ".22口徑步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".22口徑步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D6+1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".22 口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:22rifle"
+                            ],
+                            "tags": []
+                        },
+                        "30rifle": {
+                            "key": "30rifle",
+                            "name": ".30口徑步槍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "30rifle": {
+                                    "name": ".30口徑步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".30口徑步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".30 口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:30rifle"
+                            ],
+                            "tags": []
+                        },
+                        "45rifle": {
+                            "key": "45rifle",
+                            "name": ".45口徑步槍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "45rifle": {
+                                    "name": ".45口徑步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".45口徑步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8+1D6+3"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".45 口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:45rifle"
+                            ],
+                            "tags": []
+                        },
+                        "762rifle": {
+                            "key": "762rifle",
+                            "name": "7.62口徑步槍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "762rifle": {
+                                    "name": "7.62口徑步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "7.62口徑步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6+4"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "7.62 口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:762rifle"
+                            ],
+                            "tags": []
+                        },
+                        "444rifle": {
+                            "key": "444rifle",
+                            "name": ".444口徑步槍",
+                            "description": "我也不知道這什麼鬼口徑。",
+                            "categories": {},
+                            "attributes": {
+                                "444rifle": {
+                                    "name": ".444口徑步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".444口徑步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D8+4"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".444 口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:444rifle"
                             ],
                             "tags": []
                         }
@@ -1284,6 +1580,298 @@
                                 "attributes|fighting:weapons:20Gclose-range",
                                 "attributes|fighting:weapons:20Glong-range",
                                 "attributes|fighting:weapons:20Gslug"
+                            ],
+                            "tags": []
+                        },
+                        "16Gshotgun": {
+                            "key": "16Gshotgun",
+                            "name": "16號霰彈槍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "16Gclose-range": {
+                                    "name": "近距離",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈槍(近距離)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6+2"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                },
+                                "16Glong-range": {
+                                    "name": "遠距離",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈槍(遠距離)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D4"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                },
+                                "16Gslug": {
+                                    "name": "獨頭彈",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈(獨頭彈)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D10+5"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號獨頭彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:16Gclose-range",
+                                "attributes|fighting:weapons:16Glong-range",
+                                "attributes|fighting:weapons:16Gslug"
+                            ],
+                            "tags": []
+                        },
+                        "12Gshotgun": {
+                            "key": "12Gshotgun",
+                            "name": "12號霰彈槍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "12Gclose-range": {
+                                    "name": "近距離",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈槍(近距離)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6+2"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                },
+                                "16Glong-range": {
+                                    "name": "遠距離",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈槍(遠距離)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D4"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                },
+                                "16Gslug": {
+                                    "name": "獨頭彈",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號霰彈(獨頭彈)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D10+5"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "16號獨頭彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:16Gclose-range",
+                                "attributes|fighting:weapons:16Glong-range",
+                                "attributes|fighting:weapons:16Gslug"
                             ],
                             "tags": []
                         }
