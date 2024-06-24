@@ -1,0 +1,441 @@
+{
+    "version": 0,
+    "system": "coc7",
+    "extends": {
+        "ids": [
+            "system",
+            "close-range-weapon"
+        ],
+        "entities": {
+            "system": {
+                "name": "系統",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "armor",
+                        "SAN"
+                    ],
+                    "entities": {
+                        "armor": {
+                            "key": "armor",
+                            "name": "護甲",
+                            "description": "在狀態欄位新增護甲欄跟護甲值",
+                            "categories": {},
+                            "attributes": {
+                                "def": {
+                                    "name": "護甲值",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": true,
+                                    "description": "有些生物的資料中含有「護甲」一項，這些裝甲來自硬皮、厚厚的肌肉/脂肪層或者異界的身體。人類可以穿上各種各樣的裝甲，從處理過的皮革直到防彈衣。一種裝甲可以抵禦多大強度的傷害、抵禦何種傷害，這些都需要富有創造性的調查員諸君去探索。\n\n遭到「貫穿」並不會使你失去護甲。護甲的表面積相當大，而彈孔和刀痕都很小；所以，護甲在同一位置上被穿透兩次的機率小得可以忽略。\n\n在傷害擲骰的結果上減去裝甲值，就是真正受到的傷害。",
+                                    "value": 0,
+                                    "rolls": [],
+                                    "type": "number"
+                                },
+                                "special-armor": {
+                                    "name": "特殊護甲",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": "N/A",
+                                    "description": "有些生物的減傷方式是特殊的(例如物理傷害減半)，故新增此欄位",
+                                    "rolls": [],
+                                    "type": "text"
+                                }
+                            },
+                            "order": [
+                                "attributes|basicInfo:basicAttributes:def",
+                                "attributes|basicInfo:basicAttributes:special-armor"
+                            ],
+                            "tags": []
+                        },
+                        "SAN": {
+                            "key": "SAN",
+                            "name": "理智",
+                            "description": "新增SAN值損失到瘋狂欄",
+                            "categories": {},
+                            "attributes": {
+                                "SC-value": {
+                                    "name": "SAN值損失",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "description": "如果KP要求的數值不在列表裡請自行新增",
+                                    "value": [
+                                        "1D2",
+                                        "1D3",
+                                        "1D4"
+                                    ],
+                                    "rolls": [],
+                                    "type": "roll"
+                                }
+                            },
+                            "order": [
+                                "attributes|basicInfo:insanity:SC-value"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            },
+            "close-range-weapon": {
+                "name": "近戰武器",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "hand",
+                        "Brass-knuckles",
+                        "burning-torch",
+                        "Wrapped-iron-rod",
+                        "large-stick",
+                        "small-stick"
+                    ],
+                    "entities": {
+                        "hand": {
+                            "key": "hand",
+                            "name": "空手",
+                            "description": "就算你什麼都沒有，你也應該有雙手，被砍掉就當我沒說。",
+                            "categories": {},
+                            "attributes": {
+                                "hand": {
+                                    "name": "空手",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "空手"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D3"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "description": "",
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:hand"
+                            ],
+                            "tags": []
+                        },
+                        "Brass-knuckles": {
+                            "key": "Brass-knuckles",
+                            "name": "指虎",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "Brass-knuckles": {
+                                    "name": "指虎",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "指虎"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D3+1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:Brass-knuckles"
+                            ],
+                            "tags": []
+                        },
+                        "burning-torch": {
+                            "key": "burning-torch",
+                            "name": "燃燒的火炬",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "burning-torch": {
+                                    "name": "燃燒的火炬",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "燃燒的火炬"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:burning-torch"
+                            ],
+                            "tags": []
+                        },
+                        "Wrapped-iron-rod": {
+                            "key": "Wrapped-iron-rod",
+                            "name": "包皮鐵棍",
+                            "description": "(甩棍、護身短棒)",
+                            "categories": {},
+                            "attributes": {
+                                "Wrapped-iron-rod": {
+                                    "name": "包皮鐵棍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "包皮鐵棍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:Wrapped-iron-rod"
+                            ],
+                            "tags": []
+                        },
+                        "large-stick": {
+                            "key": "large-stick",
+                            "name": "大型棍狀物",
+                            "description": "(棒球棍、板球棒、撥火棍等)",
+                            "categories": {},
+                            "attributes": {
+                                "large-stick": {
+                                    "name": "大型棍狀物",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "大型棍狀物"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:large-stick"
+                            ],
+                            "tags": []
+                        },
+                        "small-stick": {
+                            "key": "small-stick",
+                            "name": "小型棍狀物",
+                            "description": "警棍等",
+                            "categories": {},
+                            "attributes": {
+                                "small-stick": {
+                                    "name": "小型棍狀物",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "小型棍狀物"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "近戰"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)",
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:small-stick"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
