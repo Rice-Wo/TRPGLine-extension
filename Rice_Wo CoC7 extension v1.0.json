@@ -2270,7 +2270,9 @@
                 "tags": [],
                 "value": {
                     "ids": [
-                        "9mmSMG"
+                        "9mmSMG",
+                        "765SMG",
+                        "45ACPSMG"
                     ],
                     "entities": {
                         "9mmSMG": {
@@ -2328,6 +2330,118 @@
                                 "attributes|fighting:weapons:9mmSMG"
                             ],
                             "tags": []
+                        },
+                        "765SMG": {
+                            "key": "765SMG",
+                            "name": "7.65口徑衝鋒槍",
+                            "description": "- 蠍式衝鋒槍(Sa vz. 61)",
+                            "categories": {},
+                            "attributes": {
+                                "765SMG": {
+                                    "name": "7.65衝鋒槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "7.65口徑衝鋒槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:submachineGun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "7.65mm子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:765SMG"
+                            ],
+                            "tags": []
+                        },
+                        "45ACPSMG": {
+                            "key": "45ACPSMG",
+                            "name": ".45ACP口徑衝鋒槍",
+                            "description": "- 湯普森衝鋒槍",
+                            "categories": {},
+                            "attributes": {
+                                "45ACPSMG": {
+                                    "name": ".45ACP口徑衝鋒槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".45ACP口徑衝鋒槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:submachineGun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D10+2"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".45ACP子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:45ACPSMG"
+                            ],
+                            "tags": []
                         }
                     }
                 }
@@ -2337,7 +2451,8 @@
                 "tags": [],
                 "value": {
                     "ids": [
-                        "762LMG"
+                        "762LMG",
+                        "556LMG"
                     ],
                     "entities": {
                         "762LMG": {
@@ -2393,6 +2508,62 @@
                             },
                             "order": [
                                 "attributes|fighting:weapons:762LMG"
+                            ],
+                            "tags": []
+                        },
+                        "556LMG": {
+                            "key": "556LMG",
+                            "name": "5.56毫米口徑機槍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "556LMG": {
+                                    "name": "5.56毫米口徑機槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5.56毫米口徑機槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:machineGun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "5.56mm子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:556LMG"
                             ],
                             "tags": []
                         }

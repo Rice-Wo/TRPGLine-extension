@@ -37,5 +37,14 @@
                         "545AR",
                         "556AR",
                         "50AR"
+                    ],
+    "SMG_ids": [
+                        "9mmSMG",
+                        "765SMG",
+                        "45ACPSMG"
+                    ],
+    "LMG_ids": [
+                        "762LMG",
+                        "556LMG"
                     ]
 }
