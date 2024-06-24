@@ -85,7 +85,7 @@
                 }
             },
             "close-range-weapon": {
-                "name": "近戰武器",
+                "name": "冷兵器",
                 "tags": [],
                 "value": {
                     "ids": [
@@ -1434,7 +1434,10 @@
                 "tags": [],
                 "value": {
                     "ids": [
-                        "20Gshotgun"
+                        "20Gshotgun",
+                        "16Gshotgun",
+                        "12Gshotgun",
+                        "10Gshotgun"
                     ],
                     "entities": {
                         "20Gshotgun": {
@@ -1744,7 +1747,7 @@
                                         {
                                             "name": "",
                                             "type": "text",
-                                            "value": "16號霰彈槍(近距離)"
+                                            "value": "12號霰彈槍(近距離)"
                                         },
                                         {
                                             "name": "",
@@ -1754,12 +1757,12 @@
                                         {
                                             "name": "",
                                             "type": "text",
-                                            "value": "2D6+2"
+                                            "value": "4D6"
                                         },
                                         {
                                             "name": "",
                                             "type": "text",
-                                            "value": "16號霰彈"
+                                            "value": "12號霰彈"
                                         },
                                         {
                                             "name": "",
@@ -1779,7 +1782,7 @@
                                     "rolls": [],
                                     "type": "row"
                                 },
-                                "16Glong-range": {
+                                "12Glong-range": {
                                     "name": "遠距離",
                                     "hasCustomName": false,
                                     "removable": false,
@@ -1788,7 +1791,7 @@
                                         {
                                             "name": "",
                                             "type": "text",
-                                            "value": "16號霰彈槍(遠距離)"
+                                            "value": "12號霰彈槍(遠距離)"
                                         },
                                         {
                                             "name": "",
@@ -1798,12 +1801,12 @@
                                         {
                                             "name": "",
                                             "type": "text",
-                                            "value": "1D4"
+                                            "value": "1D6"
                                         },
                                         {
                                             "name": "",
                                             "type": "text",
-                                            "value": "16號霰彈"
+                                            "value": "12號霰彈"
                                         },
                                         {
                                             "name": "",
@@ -1823,7 +1826,7 @@
                                     "rolls": [],
                                     "type": "row"
                                 },
-                                "16Gslug": {
+                                "12Gslug": {
                                     "name": "獨頭彈",
                                     "hasCustomName": false,
                                     "removable": false,
@@ -1832,7 +1835,7 @@
                                         {
                                             "name": "",
                                             "type": "text",
-                                            "value": "16號霰彈(獨頭彈)"
+                                            "value": "12號霰彈(獨頭彈)"
                                         },
                                         {
                                             "name": "",
@@ -1842,12 +1845,12 @@
                                         {
                                             "name": "",
                                             "type": "text",
-                                            "value": "1D10+5"
+                                            "value": "1D10+6"
                                         },
                                         {
                                             "name": "",
                                             "type": "text",
-                                            "value": "16號獨頭彈"
+                                            "value": "12號獨頭彈"
                                         },
                                         {
                                             "name": "",
@@ -1869,9 +1872,155 @@
                                 }
                             },
                             "order": [
-                                "attributes|fighting:weapons:16Gclose-range",
-                                "attributes|fighting:weapons:16Glong-range",
-                                "attributes|fighting:weapons:16Gslug"
+                                "attributes|fighting:weapons:12Gclose-range",
+                                "attributes|fighting:weapons:12Glong-range",
+                                "attributes|fighting:weapons:12Gslug"
+                            ],
+                            "tags": []
+                        },
+                        "10Gshotgun": {
+                            "key": "10Gshotgun",
+                            "name": "10號霰彈槍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "10Gclose-range": {
+                                    "name": "近距離",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "10號霰彈槍(近距離)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "4D6+2"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "10號霰彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                },
+                                "10Glong-range": {
+                                    "name": "遠距離",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "10號霰彈槍(遠距離)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D4"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "10號霰彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                },
+                                "10Gslug": {
+                                    "name": "獨頭彈",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "10號霰彈(獨頭彈)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D10+7"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "10號獨頭彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:10Gclose-range",
+                                "attributes|fighting:weapons:10Glong-range",
+                                "attributes|fighting:weapons:10Gslug"
                             ],
                             "tags": []
                         }
