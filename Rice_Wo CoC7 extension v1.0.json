@@ -4,7 +4,13 @@
     "extends": {
         "ids": [
             "system",
-            "close-range-weapon"
+            "close-range-weapon",
+            "rifle",
+            "shotgun",
+            "assault-rifle",
+            "SMG",
+            "LMG",
+            "miscellaneous"
         ],
         "entities": {
             "system": {
@@ -658,6 +664,498 @@
                             },
                             "order": [
                                 "attributes|fighting:weapons:nunchaku"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            },
+            "rifle": {
+                "name": "步槍",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "58rifle"
+                    ],
+                    "entities": {
+                        "58rifle": {
+                            "key": "58rifle",
+                            "name": ".58口徑步槍",
+                            "description": "- 春田 M1861\n",
+                            "categories": {},
+                            "attributes": {
+                                "58rifle": {
+                                    "name": ".58口徑步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".58口徑步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D10+4"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": ".58 口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:58rifle"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            },
+            "shotgun": {
+                "name": "霰彈槍",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "20Gshotgun"
+                    ],
+                    "entities": {
+                        "20Gshotgun": {
+                            "key": "20Gshotgun",
+                            "name": "20號霰彈槍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "20Gclose-range": {
+                                    "name": "近距離",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "20號霰彈槍(近距離)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "20號霰彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                },
+                                "20Glong-range": {
+                                    "name": "遠距離",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "20號霰彈槍(遠距離)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D3"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "20號霰彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                },
+                                "20Gslug": {
+                                    "name": "獨頭彈",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "20號霰彈(獨頭彈)"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D10+4"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "20號獨頭彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:20Gclose-range",
+                                "attributes|fighting:weapons:20Glong-range",
+                                "attributes|fighting:weapons:20Gslug"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            },
+            "assault-rifle": {
+                "name": "突擊步槍",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "762AR"
+                    ],
+                    "entities": {
+                        "762AR": {
+                            "key": "762AR",
+                            "name": "7.62口徑突擊步槍",
+                            "description": "- AK 47\n- AKM",
+                            "categories": {},
+                            "attributes": {
+                                "j9Zk8VMsOhUF": {
+                                    "name": "7.62口徑突擊步槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "7.62口徑突擊步槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:rifle-shotgun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6+1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "7.62口徑子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:j9Zk8VMsOhUF"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            },
+            "SMG": {
+                "name": "衝鋒槍",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "9mmSMG"
+                    ],
+                    "entities": {
+                        "9mmSMG": {
+                            "key": "9mmSMG",
+                            "name": "9毫米衝鋒槍",
+                            "description": "- MP18\n- HK MP5\n- MAC-11\n- mini uzi",
+                            "categories": {},
+                            "attributes": {
+                                "9mmSMG": {
+                                    "name": "9毫米衝鋒槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "9毫米衝鋒槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:submachineGun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D10"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "9mm子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:9mmSMG"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            },
+            "LMG": {
+                "name": "機槍",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "762LMG"
+                    ],
+                    "entities": {
+                        "762LMG": {
+                            "key": "762LMG",
+                            "name": "7.62毫米口徑機槍",
+                            "description": "- M1917A1\n- M1918",
+                            "categories": {},
+                            "attributes": {
+                                "762LMG": {
+                                    "name": "7.62毫米口徑機槍",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "7.62毫米口徑機槍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{firearmsSkills:machineGun:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6+4"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "7.62mm子彈"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:762LMG"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            },
+            "miscellaneous": {
+                "name": "其他武器",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "molotov"
+                    ],
+                    "entities": {
+                        "molotov": {
+                            "key": "molotov",
+                            "name": "燃燒瓶",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "molotov": {
+                                    "name": "燃燒瓶",
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "燃燒瓶"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{movementSkills:throw:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "2D6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "燃燒瓶"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "rolls": [],
+                                    "type": "row"
+                                }
+                            },
+                            "order": [
+                                "attributes|fighting:weapons:molotov"
                             ],
                             "tags": []
                         }
