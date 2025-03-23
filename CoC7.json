@@ -1,1 +1,195 @@
-{"version":0,"system":"coc7","extends":{"ids":["default"],"entities":{"default":{"id":"default","name":"預設頁籤","tags":[],"value":{"ids":["default"],"entities":{"default":{"key":"default","name":"示範擴充(點擊進入)","description":"","categories":{},"attributes":{"EXk6AyIT_O46":{"name":"新技能","type":"row","value":[{"name":"","type":"text","value":"awdawd"},{"name":"","type":"number","value":0},{"name":"","type":"text","value":""},{"name":"","type":"text","value":""},{"name":"","type":"number","value":0},{"name":"","type":"number","value":0}],"readonly":false,"hasCustomName":true,"removable":false,"disableSeparator":false,"rolls":[]}},"overrides":{},"order":["required-extensions|buildIn:weaponList:bow","attributes|fighting:weapons:EXk6AyIT_O46"],"tags":[]}}}}}}}
+{
+    "version": 0,
+    "system": "coc7",
+    "extends": {
+        "ids": [
+            "system",
+            "weapons"
+        ],
+        "entities": {
+            "system": {
+                "id": "基本功能",
+                "name": "基本功能",
+                "tags": [],
+                "value": {
+                    "ids": [
+                        "baseCharacter"
+                    ],
+                    "entities": {
+                        "baseCharacter": {
+                            "key": "baseCharacter",
+                            "name": "基本",
+                            "description": "一切的基本，內容包括：\n\n* 拳頭\n* 護甲\n\n沒了。",
+                            "categories": {},
+                            "attributes": {
+                                "bareHand": {
+                                    "name": "空手",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "拳頭"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D3"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "0w"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= ??1 @??0(命中)"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": [],
+                                    "description": "雖然是叫拳頭啦，但是其實是泛指沒有武器的狀況，所以就算你沒手也是用這個"
+                                },
+                                "armor": {
+                                    "name": "護甲",
+                                    "type": "number",
+                                    "value": 0,
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "description": "代表你的減傷值",
+                                    "rolls": []
+                                }
+                            },
+                            "overrides": {},
+                            "order": [
+                                "overrides|fighting:weapons:weapons-1",
+                                "attributes|fighting:weapons:bareHand",
+                                "attributes|basicInfo:basicAttributes:armor"
+                            ],
+                            "tags": []
+                        }
+                    }
+                }
+            },
+            "weapons": {
+                "id": "武器",
+                "name": "武器",
+                "tags": [
+                    "近戰",
+                    "火器",
+                    "遠程",
+                    "步槍",
+                    "手槍",
+                    "衝鋒槍",
+                    "機槍"
+                ],
+                "value": {
+                    "ids": [
+                        "BrassKnuckles",
+                        "BurningTorch"
+                    ],
+                    "entities": {
+                        "BrassKnuckles": {
+                            "key": "BrassKnuckles",
+                            "name": "指虎",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "slot": {
+                                    "name": "技能格",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "指虎"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D3+1"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "接觸"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= [??1, ??1/2, ??1/5] @??0(命中)",
+                                                "3D100H1 <= ??1 @??0(命中) @懲罰X2",
+                                                "2D100H1 <= ??1 @??0(命中) @懲罰",
+                                                "2D100L1 <= ??1 @??0(命中) @獎勵",
+                                                "3D100L1 <= ??1 @??0(命中) @獎勵x2"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                }
+                            },
+                            "overrides": {},
+                            "order": [
+                                "attributes|fighting:weapons:slot"
+                            ],
+                            "tags": [
+                                "近戰"
+                            ]
+                        },
+                        "BurningTorch": {
+                            "key": "BurningTorch",
+                            "name": "燃燒的火炬",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {},
+                            "overrides": {},
+                            "order": [
+                                "attributes|fighting:weapons:slot"
+                            ],
+                            "tags": [
+                                "近戰"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
