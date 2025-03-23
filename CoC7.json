@@ -106,7 +106,8 @@
                 "value": {
                     "ids": [
                         "BrassKnuckles",
-                        "BurningTorch"
+                        "BurningTorch",
+                        "Baton"
                     ],
                     "entities": {
                         "BrassKnuckles": {
@@ -115,7 +116,7 @@
                             "description": "",
                             "categories": {},
                             "attributes": {
-                                "slot": {
+                                "BrassKnuckles": {
                                     "name": "技能格",
                                     "type": "row",
                                     "value": [
@@ -167,7 +168,7 @@
                             },
                             "overrides": {},
                             "order": [
-                                "attributes|fighting:weapons:slot"
+                                "attributes|fighting:weapons:BrassKnuckles"
                             ],
                             "tags": [
                                 "近戰"
@@ -178,10 +179,124 @@
                             "name": "燃燒的火炬",
                             "description": "",
                             "categories": {},
-                            "attributes": {},
+                            "attributes": {
+                                "BurningTorch": {
+                                    "name": "技能格",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "燃燒的火炬"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D6"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "接觸"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= [??1, ??1/2, ??1/5] @??0(命中)",
+                                                "3D100H1 <= ??1 @??0(命中) @懲罰X2",
+                                                "2D100H1 <= ??1 @??0(命中) @懲罰",
+                                                "2D100L1 <= ??1 @??0(命中) @獎勵",
+                                                "3D100L1 <= ??1 @??0(命中) @獎勵x2"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                }
+                            },
                             "overrides": {},
                             "order": [
-                                "attributes|fighting:weapons:slot"
+                                "attributes|fighting:weapons:BurningTorch"
+                            ],
+                            "tags": [
+                                "近戰"
+                            ]
+                        },
+                        "Baton": {
+                            "key": "Baton",
+                            "name": "包皮鐵棍",
+                            "description": "",
+                            "categories": {},
+                            "attributes": {
+                                "Baton": {
+                                    "name": "技能格",
+                                    "type": "row",
+                                    "value": [
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "包皮鐵棍"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "read",
+                                            "value": "{fightingSkills:brawl:0}"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "1D8"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "text",
+                                            "value": "接觸"
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "1D100 <= [??1, ??1/2, ??1/5] @??0(命中)",
+                                                "3D100H1 <= ??1 @??0(命中) @懲罰X2",
+                                                "2D100H1 <= ??1 @??0(命中) @懲罰",
+                                                "2D100L1 <= ??1 @??0(命中) @獎勵",
+                                                "3D100L1 <= ??1 @??0(命中) @獎勵x2"
+                                            ]
+                                        },
+                                        {
+                                            "name": "",
+                                            "type": "roll",
+                                            "value": [
+                                                "??2 +{basicAttributes:db} @??0(傷害)"
+                                            ]
+                                        }
+                                    ],
+                                    "readonly": false,
+                                    "hasCustomName": false,
+                                    "removable": false,
+                                    "disableSeparator": false,
+                                    "rolls": []
+                                }
+                            },
+                            "overrides": {},
+                            "order": [
+                                "attributes|fighting:weapons:Baton"
                             ],
                             "tags": [
                                 "近戰"
